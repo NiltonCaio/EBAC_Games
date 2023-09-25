@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #232323;
+    color: aliceblue;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header, footer {
+    background-color: black;
+    padding-top: 16px;
+    color: gold;
+}
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: gold;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: gold;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+h2 {
+    color: gold;
+}
+
+#sobre-nos img {
+    height: 20em;
+    width: 20em;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    border-bottom: 1px solid gold;
+    margin-bottom: 16px;
+}
+
+.lista-jogos {
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.lista-jogos li {
+    list-style: none;
+    width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-jogos li h3 {
+    margin: 16px 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: gold;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+ul li img {
+    height: 15rem;
+    width: 15rem;
+}
+
+.form-campo {
+    margin-bottom: 13px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer {
+    border-top: 1px solid gold;
+}
+
+footer ul li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .container-flex {
+        display: block;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    #sobre-nos img {
+        height: 17em;
+        width: 17em;
+    }
+
+    form button {
+        width: 60px;
+    }
+
+    .lista-jogos li {
+        width: 50%;
+        margin-bottom: 18px;
+    }
+
+    .lista-jogos li h3 {
+        margin: 10px 0;
+    }
+
+    ul li img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    footer > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 16px;
+}
+
+    footer ul li img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }   
+
+    #sobre-nos p {
+        font-size: 14px;
+    }
+}
